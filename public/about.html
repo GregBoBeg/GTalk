@@ -19,9 +19,12 @@
         <a href="index.html" id="leave-btn" class="btn">Close</a>
       </header>
       <main class="page-main">
-        <div>
-          
-          <h1 class="page-title"><img src="images/ImgGear.png" width="150"> GTalk:  Behind the Scenes</h1>
+        <div class="image-txt-container">
+          <img src="images/ImgGear.png" width="280"  style="padding: 20px 20px 20px 0px;">
+          <div>
+            <h1 class="page-title"> GTalk</h1>
+            <h1 class="page-title"> Behind the Scenes</h1>
+          </div>
         </div>
         <div>
           <h3 class="page-h3">The Application</h3>
@@ -30,38 +33,44 @@
             which uses Node.js, Express and Socket.IO for backend communication between users. 
           </p>
 
-          <h4 class="page-h4">Front-end Functionality</h4>
-          <p>
-            The Welcome Page’s primary function is to allow users a choice of which chat discussion they wish to join.
-          </p>
-          <p>
-            Once a discussion topic is selected, the user is added to the discussion, where they can chat with other users about that topic.
-          </p>
+          <div class="image-txt-container">
+            <img src="images/ImgNetwork.png" style="padding: 20px 20px 20px 0px;">
+            <div>
+              <h4 class="page-h4">Front-end</h4>
+              <p>
+                The Welcome Page allows users to choose which chat discussion they wish to join.
+              </p>
+              <p>
+                Once the discussion topic is selected, the user can chat in real-time with other users about that topic.
+              </p>
+              <h4 class="page-h4">Back-end</h4>
+              <p>
+                The server-side code emits signals as users join/leave discussions.
+                When a signal is detected, the user is added to (or removed from) the socket.
+                A message is then broadcasted back out over the socket, notifying all other users that someone has joined/left the discussion. 
+              </p>
+              <p>
+                When a user posts a message, the server-side code detects the message and broadcasts it back out over the socket 
+                to all other users in that discussion, thus facilitating real-time chat.
+              </p>
 
-          <h4 class="page-h4">Back-end Functionality</h4>
-          <p>
-            The Node.js server-side code emits signals when users join and leave discussions.  
-            When a signal is detected, the user is added to (or removed from) the socket.  
-            A message is then broadcasted back out over the socket, notifying all other users that someone has joined/left the discussion. 
-          </p>
-          <p>
-            When a user posts a message, the server-side code detects the message and broadcasts it back out over the socket 
-            to all other users in that discussion, thus facilitating real-time chat.
-          </p>
+            </div>
+          </div>
+          
 
           <h3 class="page-h3">The Deployment</h3>
           <p>
-            The GTalk app is deployed on the Heroku platform.  
-            The project is maintained with version control, using GIT, and pushed to a Github repository. 
+            The GTalk app is deployed on the Heroku cloud platform.
+            The project is maintained with version control, using GIT, and pushed to a Github repository.
             Heroku is configured with a pipeline to automatically recognize and deploy changes from the Github repository.
           </p>
 
-          <h3 class="page-h3">Using and Test-Driving GTalk</h3>
-          <p>To test drive the app's functionality, open multiple copies of the app's <a href="index.html" class="page-link" target="_blank">Welcome Page</a> (index.html).  
+          <h3 class="page-h3">Test-Driving GTalk</h3>
+          <p>To test drive the app, open multiple copies of the app's <a href="index.html" class="page-link" target="_blank">Welcome Page</a> (index.html).  
             This can be done on multiple devices or on a single device with multple browser windows.
           </p>
           <p>
-            On each Welcome Page, enter a unique Username for each window.  
+            On each Welcome Page, enter a unique Username.  
             Also, be sure to select the <b>same discussion topic</b> on each Welcome Page.  
             This will allow real-time chatting between each browser window.
           </p>

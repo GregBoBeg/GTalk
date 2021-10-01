@@ -105,6 +105,11 @@ a.page-link:hover {
 	background-color: var(--dark-color-a);
 }
 
+.image-txt-container {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+  }
 
 /* Chat Page */
 
