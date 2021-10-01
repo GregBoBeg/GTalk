@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-	--dark-color-a: #667aff;
-	--dark-color-b: #7386ff;
-	--light-color: #e6e9ff;
+	--dark-color-a: #2c6d9b;
+	--dark-color-b: #317baf;
+	--light-color: #e3f3ff;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -21,13 +21,23 @@ body {
 	margin: 20px;
 }
 
+footer {
+	background: var(--light-color);
+}
+
+p {
+	margin-top: 1em;
+}
+
 ul {
 	list-style: none;
 }
 
 a {
 	text-decoration: none;
+	color: #fff;
 }
+
 
 .btn {
 	cursor: pointer;
@@ -37,6 +47,64 @@ a {
 	border: 0;
 	font-size: 17px;
 }
+
+/* Regular Page */
+
+h1.page-title {
+	color: var(--dark-color-a);
+	font-size: 50px;
+}
+
+h3.page-h3 {
+	margin-top: 1em;
+	color: var(--dark-color-a);
+}
+
+h4.page-h4 {
+	margin-top: 1em;
+	color: #333;
+}
+
+a.page-link {
+	text-decoration: none;
+	color: var(--dark-color-a);
+	font-weight: bold;
+}
+
+a.page-link:hover {
+	text-decoration: underline;
+	font-weight: bold;
+	color: var(--dark-color-b);
+}
+
+.page-container {
+	max-width: 1100px;
+	background: #fefefe;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.page-header {
+	background: var(--dark-color-a);
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.page-main {
+	margin: 30px;
+
+}
+
+.page-footer {
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
+
 
 /* Chat Page */
 
@@ -135,12 +203,13 @@ a {
 }
 
 .join-header {
-	text-align: center;
 	padding: 20px;
 	background: var(--dark-color-a);
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-}
+	display: flex;
+	align-items: center;
+	justify-content: space-between;}
 
 .join-main {
 	padding: 30px 40px;

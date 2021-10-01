@@ -21,7 +21,6 @@ socket.on('roomUsers', ({ room, users }) => {
 
 // Output Messages from Server
 socket.on('message', message => {
-    console.log(message);
     outputMessage(message);
 });
 

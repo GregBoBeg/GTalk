@@ -11,12 +11,13 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="css/style.css" />
-		<title>ChatCord App</title>
+		<title>GTalk</title>
 	</head>
 	<body>
 		<div class="join-container">
 			<header class="join-header">
-				<h1><i class="fas fa-smile"></i> ChatCord</h1>
+				<h1><img src="images/LogoGTalk.png" width=50>GTalk</h1>
+				<p>Welcome to GTalk!</p>
 			</header>
 			<main class="join-main">
 				<form action="chat.html">
@@ -31,19 +32,26 @@
 						/>
 					</div>
 					<div class="form-control">
-						<label for="room">Room</label>
+						<label for="room">Discussion</label>
 						<select name="room" id="room">
-							<option value="JavaScript">JavaScript</option>
-							<option value="Python">Python</option>
-							<option value="PHP">PHP</option>
-							<option value="C#">C#</option>
-							<option value="Ruby">Ruby</option>
-							<option value="Java">Java</option>
+							<option value="General">General</option>
+							<option value="Relationships">Relationships</option>
+							<option value="Parenting">Parenting</option>
+							<option value="Health">Health</option>
+							<option value="Exercise">Exercise</option>
+							<option value="Diet">Diet</option>
+							<option value="Spiritual">Spiritual</option>
+							<option value="Employment">Employment</option>
+							<option value="Business">Business</option>
+							<option value="Investments">Investments</option>
+							<option value="Hobbies">Hobbies</option>
+							<option value="Vacations">Vacations</option>
 						</select>
 					</div>
-					<button type="submit" class="btn">Join Chat</button>
+					<button type="submit" class="btn">Join Discussion</button>
 				</form>
 			</main>
+			<footer><a href="about.html" class="page-link">Behind-The-Scenes Tour</a></footer>
 		</div>
 	</body>
 </html>

@@ -22,7 +22,7 @@ io.on('connection', socket => {
         socket.join(user.room);
 
         // Emit welcome message to new client connected
-        socket.emit('message', formatMessage('Admin', 'Welcome to Chatcord'));
+        socket.emit('message', formatMessage('Admin', 'GTalk Discussion Activated...'));
 
         // Broadcast new client connected
         socket.broadcast.to(user.room).emit('message', formatMessage('Admin', `'${user.username}' has joined the chat.`));

@@ -10,17 +10,17 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>ChatCord App</title>
+    <title>GTalk</title>
   </head>
   <body>
     <div class="chat-container">
       <header class="chat-header">
-        <h1><i class="fas fa-smile"></i> ChatCord</h1>
-        <a id="leave-btn" class="btn">Leave Room</a>
+        <h1><img src="images/LogoGTalk.png" width=50>GTalk</h1>
+        <a href="index.html" id="leave-btn" class="btn">Exit Discussion</a>
       </header>
       <main class="chat-main">
         <div class="chat-sidebar">
-          <h3><i class="fas fa-comments"></i> Room Name:</h3>
+          <h3><i class="fas fa-comments"></i> Discussion:</h3>
           <h2 id="room-name"></h2>
           <h3><i class="fas fa-users"></i> Users</h3>
           <ul id="users"></ul>
@@ -32,13 +32,14 @@
           <input
             id="msg"
             type="text"
-            placeholder="Please Enter Message"
+            placeholder="Enter Message"
             required
             autocomplete="off"
           />
           <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
         </form>
       </div>
+      <footer><a href="about.html" class="page-link">Behind-The-Scenes Tour</a></footer>
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"

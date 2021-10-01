@@ -1,5 +1,5 @@
 {
-  "name": "chatcord",
+  "name": "gtalk",
   "version": "1.0.0",
   "description": "Real-Time Chat App with Server and Rooms",
   "main": "server.js",
